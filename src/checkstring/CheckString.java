@@ -12,8 +12,20 @@ package checkstring;
 public class CheckString {
 
     /**
-     * @param args the command line arguments
+     * @param name
+     * 
+     * @return 
      */
+    
+    public static boolean checkchar(String name){
+    for(int i = 0; i<name.length();i++){
+    if (Character.isDigit(name.charAt(i))){
+    return true;
+    }
+    }
+    return false;
+    }
+    
     public static void main(String[] args) {
   
     String c="as23g";
@@ -26,6 +38,6 @@ public class CheckString {
     System.out.println("Given String has only characters no digits");
     }
     }     
-
+  
   //create method here to check the given String has numbers or not
 }
